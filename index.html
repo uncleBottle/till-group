@@ -7,6 +7,658 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
+    <nav class="nav">
+      <img src="images/brand-logo.svg" alt="" class="logo" />
+      <svg class="icon" id="menu">
+        <use xlink:href="images/sprite.svg#menu"></use>
+      </svg>
+    </nav>
+
+    <div class="sidebar">
+      <nav class="nav">
+        <img src="images/brand-logo.svg" alt="" class="logo" />
+        <svg class="icon" id="exit">
+          <use xlink:href="images/sprite.svg#exit"></use>
+        </svg>
+      </nav>
+      <ul class="list">
+        <li class="list__item">
+          <a href="#" class="link">Home</a>
+        </li>
+        <li class="list__item">
+          <a href="#" class="link">service</a>
+        </li>
+        <li class="list__item">
+          <a href="#" class="link">about us</a>
+        </li>
+        <li class="list__item">
+          <a href="#" class="link">contact us</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="hero">
+      <!-- Implement carousel -->
+      <img src="images/carousel-1.webp" alt="" class="carousel__image active" />
+      <img src="images/carousel-2.webp" alt="" class="carousel__image" />
+      <img src="images/carousel-3.webp" alt="" class="carousel__image" />
+      <div class="carousel__controls">
+        <button class="btn carousel__control" id="prevBtn">&#10094;</button>
+        <button class="btn carousel__control" id="nextBtn">&#10095;</button>
+      </div>
+      <div class="hero__content">
+        <header class="header">
+          <h1 class="hero__heading">Best delivery service</h1>
+          <h3 class="hero__tagline">we treat your goods like ours</h3>
+        </header>
+        <button class="btn">Learn more</button>
+        <button class="btn">send package</button>
+      </div>
+      <div class="carousel__indicators">
+        <span class="carousel__indicator active"></span>
+        <span class="carousel__indicator"></span>
+        <span class="carousel__indicator"></span>
+      </div>
+    </div>
+
+    <section class="section instructions">
+      <header class="header">
+        <h3 class="instructions__title">how it works</h3>
+        <h2 class="instructions__tagline">Understand how to place order</h2>
+      </header>
+      <div class="media">
+        <div class="media__image">
+          <img src="images/01.png" alt="" />
+        </div>
+        <div class="media__body">
+          <header class="header">
+            <h3 class="media__title">navigate to place order</h3>
+          </header>
+          <p class="media__text">
+            Enter the website and navigate to the to the place order
+          </p>
+        </div>
+      </div>
+      <div class="media">
+        <div class="media__image">
+          <img src="images/02.png" alt="" />
+        </div>
+        <div class="media__body">
+          <header class="header">
+            <h3 class="media__title">fill the form</h3>
+          </header>
+          <p class="media__text">
+            After navigating to the place order user will fill a form inputing
+            customer name and contact, recipient's name and contact
+          </p>
+        </div>
+      </div>
+      <div class="media">
+        <div class="media__image">
+          <img src="images/03.png" alt="" />
+        </div>
+        <div class="media__body">
+          <header class="header">
+            <h3 class="media__title">make payment</h3>
+          </header>
+          <p class="media__text">
+            After filling the form user wiill make paymnet there are three
+            options for user to make payment, user are also given option to make
+            direct transfer user can select direct transfer user will be able to
+            user the bank they want to transfer to and account number wil be
+            given to the uer to make the transfer and user will drop the prove
+            of payment (Screenshot)
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section customer form-active">
+      <header class="header">
+        <h1 class="customer__title">customer details</h1>
+        <div class="progress">
+          <h3 class="progress-indicator">Step 1 of 3</h3>
+          <svg class="icon indicator">
+            <use xlink:href="images/sprite.svg#ellipse"></use>
+          </svg>
+          <svg class="icon indicator inactive">
+            <use xlink:href="images/sprite.svg#ellipse"></use>
+          </svg>
+          <svg class="icon indicator inactive">
+            <use xlink:href="images/sprite.svg#ellipse"></use>
+          </svg>
+        </div>
+      </header>
+      <form action="submit">
+        <label for="name" class="label">Name</label>
+        <div class="input-group">
+          <svg class="icon">
+            <use xlink:href="images/sprite.svg#contact"></use>
+          </svg>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="devin jhon"
+            class="input"
+          />
+        </div>
+        <label for="phone" class="label">phone number</label>
+        <div class="input-group">
+          <svg class="icon">
+            <use xlink:href="images/sprite.svg#phone"></use>
+          </svg>
+          <input
+            type="text"
+            name="phone"
+            id="phone"
+            placeholder="+234 012 345 6789"
+            class="input"
+          />
+        </div>
+        <label for="product" class="label">product category</label>
+        <div class="input-group">
+          <svg class="icon">
+            <use xlink:href="images/sprite.svg#lift"></use>
+          </svg>
+          <!-- revisit -->
+          <input
+            type="text"
+            name="product"
+            id="product"
+            placeholder="plastic"
+            class="input"
+          />
+          <svg class="icon">
+            <use xlink:href="images/sprite.svg#arrow-down"></use>
+          </svg>
+        </div>
+        <label for="pickup-address" class="label">pick up address</label>
+        <div class="input-group">
+          <svg class="icon">
+            <use xlink:href="images/sprite.svg#location"></use>
+          </svg>
+          <input
+            type="text"
+            name="pickup-address"
+            id="pickup-address"
+            placeholder="No 35, Ojota, Ikotun, Lagos"
+            class="input"
+          />
+        </div>
+        <label for="name" class="label optional">house/Apartment number</label>
+        <div class="input-group">
+          <svg class="icon">
+            <use xlink:href="images/sprite.svg#location"></use>
+          </svg>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="No 35, Ojota, Ikotun, Lagos"
+            class="input"
+          />
+        </div>
+        <label for="name" class="label optional">area</label>
+        <div class="input-group">
+          <svg class="icon">
+            <use xlink:href="images/sprite.svg#location"></use>
+          </svg>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="No 35, Ojota, Ikotun, Lagos"
+            class="input"
+          />
+        </div>
+        <label for="name" class="label optional">landmark</label>
+        <div class="input-group">
+          <svg class="icon">
+            <use xlink:href="images/sprite.svg#location"></use>
+          </svg>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="No 35, Ojota, Ikotun, Lagos"
+            class="input"
+          />
+        </div>
+        <label for="name" class="label">product picture</label>
+        <!-- Implement upload area -->
+
+        <button class="btn btn--black btn--block">Proceed</button>
+      </form>
+    </section>
+
+    <section class="section recipient">
+      <header class="header">
+        <h1 class="recipient__title">recipient's details</h1>
+        <div class="progress">
+          <h3 class="progress-indicator">Step 2 of 3</h3>
+          <svg class="icon indicator">
+            <use xlink:href="images/sprite.svg#ellipse"></use>
+          </svg>
+          <svg class="icon indicator">
+            <use xlink:href="images/sprite.svg#ellipse"></use>
+          </svg>
+          <svg class="icon indicator inactive">
+            <use xlink:href="images/sprite.svg#ellipse"></use>
+          </svg>
+        </div>
+      </header>
+      <form action="submit">
+        <label for="name" class="label">Name</label>
+        <div class="input-group">
+          <svg class="icon">
+            <use xlink:href="images/sprite.svg#contact"></use>
+          </svg>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="devin jhon"
+            class="input"
+          />
+        </div>
+        <label for="phone" class="label">phone number</label>
+        <div class="input-group">
+          <svg class="icon">
+            <use xlink:href="images/sprite.svg#phone"></use>
+          </svg>
+          <input
+            type="text"
+            name="phone"
+            id="phone"
+            placeholder="+234 012 345 6789"
+            class="input"
+          />
+        </div>
+        <label for="name" class="label optional">product name</label>
+        <div class="input-group">
+          <svg class="icon">
+            <use xlink:href="images/sprite.svg#lift"></use>
+          </svg>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="plastic"
+            class="input"
+          />
+        </div>
+        <label for="product" class="label">product category</label>
+        <div class="input-group">
+          <svg class="icon">
+            <use xlink:href="images/sprite.svg#lift"></use>
+          </svg>
+          <!-- revisit -->
+          <input
+            type="text"
+            name="product"
+            id="product"
+            placeholder="48 kilograms"
+            class="input"
+          />
+          <svg class="icon">
+            <use xlink:href="images/sprite.svg#arrow-down"></use>
+          </svg>
+        </div>
+        <label for="name" class="label">pick up address</label>
+        <div class="input-group">
+          <svg class="icon">
+            <use xlink:href="images/sprite.svg#location"></use>
+          </svg>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="No 35, Ojota, Ikotun, Lagos"
+            class="input"
+          />
+        </div>
+        <label for="name" class="label optional">house/apartment number</label>
+        <div class="input-group">
+          <svg class="icon">
+            <use xlink:href="images/sprite.svg#location"></use>
+          </svg>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="No 35, Ojota, Ikotun, Lagos"
+            class="input"
+          />
+        </div>
+        <label for="name" class="label optional">area</label>
+        <div class="input-group">
+          <svg class="icon">
+            <use xlink:href="images/sprite.svg#location"></use>
+          </svg>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="No 35, Ojota, Ikotun, Lagos"
+            class="input"
+          />
+        </div>
+        <label for="name" class="label optional">landmark</label>
+        <div class="input-group">
+          <svg class="icon">
+            <use xlink:href="images/sprite.svg#location"></use>
+          </svg>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="No 35, Ojota, Ikotun, Lagos"
+            class="input"
+          />
+        </div>
+        <button class="btn btn--black btn--block">Proceed</button>
+        <button class="btn btn--outline btn--block">back</button>
+      </form>
+    </section>
+
+    <section class="section payment">
+      <header class="header">
+        <h1 class="payment__title">payment's details</h1>
+        <div class="progress">
+          <h3 class="progress-indicator">Step 3 of 3</h3>
+          <svg class="icon indicator">
+            <use xlink:href="images/sprite.svg#ellipse"></use>
+          </svg>
+          <svg class="icon indicator">
+            <use xlink:href="images/sprite.svg#ellipse"></use>
+          </svg>
+          <svg class="icon indicator">
+            <use xlink:href="images/sprite.svg#ellipse"></use>
+          </svg>
+        </div>
+      </header>
+      <form action="submit">
+        <!-- implement radio boxes -->
+
+        <label for="name" class="label">price break down</label>
+        <div class="payment-detail">
+          <p class="name">delivery fee</p>
+          <p class="fee">#30,000</p>
+        </div>
+        <button class="btn btn--outline btn--block">back</button>
+        <button class="btn btn--black btn--block">Proceed</button>
+      </form>
+    </section>
+
+    <section class="section services">
+      <header class="header">
+        <h3 class="services__title">why you should choose us</h3>
+        <h2 class="services__tagline">
+          reasons why you should choose till group of companies
+        </h2>
+      </header>
+      <article class="service">
+        <img src="images/image-1.jpg" alt="" class="service__image" />
+        <div class="media">
+          <div class="media__image">
+            <svg class="icon">
+              <use xlink:href="images/sprite.svg#tick"></use>
+            </svg>
+          </div>
+          <div class="media__body">
+            <header class="header">
+              <h3 class="media__title">fastest delivery</h3>
+            </header>
+            <p class="media__text">We offer the fastest delivery nationwide</p>
+          </div>
+        </div>
+      </article>
+      <article class="service">
+        <img src="images/image-2.jpg" alt="" class="service__image" />
+        <div class="media">
+          <div class="media__image">
+            <svg class="icon">
+              <use xlink:href="images/sprite.svg#tick"></use>
+            </svg>
+          </div>
+          <div class="media__body">
+            <header class="header">
+              <h3 class="media__title">secure & safe</h3>
+            </header>
+            <p class="media__text">
+              We handle your goods like ours, safe and secure
+            </p>
+          </div>
+        </div>
+      </article>
+      <article class="service">
+        <img src="images/image-3.jpg" alt="" class="service__image" />
+        <div class="media">
+          <div class="media__image">
+            <svg class="icon">
+              <use xlink:href="images/sprite.svg#tick"></use>
+            </svg>
+          </div>
+          <div class="media__body">
+            <header class="header">
+              <h3 class="media__title">affordable price</h3>
+            </header>
+            <p class="media__text">We offer the most affordable price</p>
+          </div>
+        </div>
+      </article>
+      <article class="service">
+        <img src="images/image-4.jpg" alt="" class="service__image" />
+        <div class="media">
+          <div class="media__image">
+            <svg class="icon">
+              <use xlink:href="images/sprite.svg#tick"></use>
+            </svg>
+          </div>
+          <div class="media__body">
+            <header class="header">
+              <h3 class="media__title">customer service</h3>
+            </header>
+            <p class="media__text">
+              Our customer service works 24/7 both online and offline through
+              phone and email
+            </p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="section about">
+      <header class="header">
+        <h3 class="about__title">about us</h3>
+        <h2 class="about__tagline">learn more about us</h2>
+      </header>
+      <article class="service">
+        <img src="images/company.png" alt="" class="service__image" />
+        <div class="media">
+          <div class="media__body">
+            <p class="media__text">
+              We have provide the vision ,strategy & direction,tactically to
+              delivery customer statisfaction in Nigeria from zero to 10,000
+              customers and we look forward to creating a customer center with
+              resulting excellence.
+            </p>
+            <p class="media__text">
+              Our approach is to implement a lean & scalable solution with a
+              proactive approach to problem-solving which also includes 24/7
+              online & offline services , in respond to our client’s enquiries
+              by phone or email.
+            </p>
+            <p class="media__text">
+              In mordern age of digital exposure we are equipped with the best
+              facilities to serve you better
+            </p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="section contact">
+      <header class="header">
+        <h3 class="contact__title">Contact us</h3>
+        <h2 class="contact__tagline">
+          reach out to us to let us know how we can help you
+        </h2>
+      </header>
+      <div class="grid--1x2">
+        <div class="media">
+          <svg class="icon">
+            <use xlink:href="images/sprite.svg#phone--white"></use>
+          </svg>
+          <div class="media__body">
+            <header class="header">
+              <h3 class="media__title">phone number</h3>
+            </header>
+            <a href="#" class="link">+234 012 345 6789</a>
+            <a href="#" class="link">+234 012 345 6789</a>
+          </div>
+        </div>
+        <div class="media">
+          <svg class="icon">
+            <use xlink:href="images/sprite.svg#email--white"></use>
+          </svg>
+          <div class="media__body">
+            <header class="header">
+              <h3 class="media__title">our email</h3>
+            </header>
+            <a href="#" class="link">company@email.com</a>
+            <a href="#" class="link">company@email.com</a>
+          </div>
+        </div>
+        <div class="media">
+          <svg class="icon">
+            <use xlink:href="images/sprite.svg#x(twitter)"></use>
+          </svg>
+          <div class="media__body">
+            <header class="header">
+              <h3 class="media__title">x(Twitter)</h3>
+            </header>
+            <a href="#" class="link">@companyname</a>
+          </div>
+        </div>
+        <div class="media">
+          <svg class="icon">
+            <use xlink:href="images/sprite.svg#facebook"></use>
+          </svg>
+          <div class="media__body">
+            <header class="header">
+              <h3 class="media__title">facebook</h3>
+            </header>
+            <a href="#" class="link">Company Name</a>
+          </div>
+        </div>
+        <div class="media">
+          <svg class="icon">
+            <use xlink:href="images/sprite.svg#instagram"></use>
+          </svg>
+          <div class="media__body">
+            <header class="header">
+              <h3 class="media__title">Instagram</h3>
+            </header>
+            <a href="#" class="link">Company Name</a>
+          </div>
+        </div>
+      </div>
+      <form action="submit">
+        <label for="name" class="label">Name</label>
+        <div class="input-group">
+          <svg class="icon">
+            <use xlink:href="images/sprite.svg#contact"></use>
+          </svg>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="devin jhon"
+            class="input"
+          />
+        </div>
+        <label for="name" class="label">email address</label>
+        <div class="input-group">
+          <svg class="icon">
+            <use xlink:href="images/sprite.svg#email"></use>
+          </svg>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="devin jhon@gmail.com"
+            class="input"
+          />
+        </div>
+        <label for="name" class="label">message</label>
+        <div class="input-group" id="message-box">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="message"
+            class="input"
+          />
+        </div>
+        <button class="btn btn--block btn--secondary">Send message</button>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <div class="nav">
+        <img src="images/brand-logo.svg" alt="" class="logo" />
+      </div>
+      <p class="footer__text">
+        Our approach is to implement a lean & scalable solution with a proactive
+        approach to problem-solving which also includes 24/7 online & offline
+        services , in respond to our client's enquiries by phone or email.
+      </p>
+      <span class="icon-capsule">
+        <a href="#" class="link">
+          <svg class="icon">
+            <use xlink:href="images/sprite.svg#x(twitter)"></use>
+          </svg>
+        </a>
+        <a href="#" class="link">
+          <svg class="icon">
+            <use xlink:href="images/sprite.svg#facebook"></use>
+          </svg>
+        </a>
+        <a href="#" class="link">
+          <svg class="icon">
+            <use xlink:href="images/sprite.svg#instagram"></use>
+          </svg>
+        </a>
+      </span>
+      <h1 class="footer__heading">Quick links</h1>
+      <ul class="list">
+        <li class="list__item"><a href="#" class="link">Home</a></li>
+        <li class="list__item"><a href="#" class="link">service</a></li>
+        <li class="list__item"><a href="#" class="link">about us</a></li>
+        <li class="list__item"><a href="#" class="link">contact us</a></li>
+      </ul>
+      <p class="footer__tagline">Subscribe to get updates about our services</p>
+
+      <!-- implement form -->
+      <form action="submit">
+        <label for="name" class="label">enter email</label>
+        <div class="input-group">
+          <svg class="icon">
+            <use xlink:href="images/sprite.svg#email"></use>
+          </svg>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="devin jhon@gmail.com"
+            class="input"
+          />
+        </div>
+      </form>
+      <button class="btn btn--black btn--block">subscribe</button>
+    </footer>
 
     <!-- Scripts -->
     <script>
