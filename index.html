@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Till-Group by Akinola</title>
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
@@ -61,16 +63,16 @@
       </div>
     </div>
 
-    <section class="section instructions">
+    <section class="section instructions" data-aos="fade-up">
       <header class="header">
         <h3 class="instructions__title">how it works</h3>
         <h2 class="instructions__tagline">Understand how to place order</h2>
       </header>
       <div class="media">
-        <div class="media__image">
+        <div class="media__image" data-aos="fade-right">
           <img src="images/01.png" alt="" />
         </div>
-        <div class="media__body">
+        <div class="media__body" data-aos="fade-up">
           <header class="header">
             <h3 class="media__title">navigate to place order</h3>
           </header>
@@ -80,10 +82,10 @@
         </div>
       </div>
       <div class="media">
-        <div class="media__image">
+        <div class="media__image" data-aos="fade-right">
           <img src="images/02.png" alt="" />
         </div>
-        <div class="media__body">
+        <div class="media__body" data-aos="fade-up">
           <header class="header">
             <h3 class="media__title">fill the form</h3>
           </header>
@@ -94,10 +96,10 @@
         </div>
       </div>
       <div class="media">
-        <div class="media__image">
+        <div class="media__image" data-aos="fade-right">
           <img src="images/03.png" alt="" />
         </div>
-        <div class="media__body">
+        <div class="media__body" data-aos="fade-up">
           <header class="header">
             <h3 class="media__title">make payment</h3>
           </header>
@@ -113,7 +115,7 @@
       </div>
     </section>
 
-    <section class="section customer form-active">
+    <section class="section customer form-active" data-aos="fade-up">
       <header class="header">
         <h1 class="customer__title">customer details</h1>
         <div class="progress">
@@ -234,7 +236,7 @@
       </form>
     </section>
 
-    <section class="section recipient">
+    <section class="section recipient" data-aos="fade-up">
       <header class="header">
         <h1 class="recipient__title">recipient's details</h1>
         <div class="progress">
@@ -307,7 +309,9 @@
             <use xlink:href="images/sprite.svg#arrow-down"></use>
           </svg>
         </div>
-        <label for="recipient-pickup-address" class="label">pick up address</label>
+        <label for="recipient-pickup-address" class="label"
+          >pick up address</label
+        >
         <div class="input-group">
           <svg class="icon">
             <use xlink:href="images/sprite.svg#location"></use>
@@ -366,7 +370,7 @@
       </form>
     </section>
 
-    <section class="section payment">
+    <section class="section payment" data-aos="fade-up">
       <header class="header">
         <h1 class="payment__title">payment's details</h1>
         <div class="progress">
@@ -395,7 +399,7 @@
       </form>
     </section>
 
-    <section class="section services">
+    <section class="section services" data-aos="fade-up">
       <header class="header">
         <h3 class="services__title">why you should choose us</h3>
         <h2 class="services__tagline">
@@ -403,7 +407,12 @@
         </h2>
       </header>
       <article class="service">
-        <img src="images/image-1.jpg" alt="" class="service__image" />
+        <img
+          src="images/image-1.jpg"
+          alt=""
+          class="service__image"
+          data-aos="fade-right"
+        />
         <div class="media">
           <div class="media__image">
             <svg class="icon">
@@ -419,7 +428,12 @@
         </div>
       </article>
       <article class="service">
-        <img src="images/image-2.jpg" alt="" class="service__image" />
+        <img
+          src="images/image-2.jpg"
+          alt=""
+          class="service__image"
+          data-aos="fade-right"
+        />
         <div class="media">
           <div class="media__image">
             <svg class="icon">
@@ -437,7 +451,12 @@
         </div>
       </article>
       <article class="service">
-        <img src="images/image-3.jpg" alt="" class="service__image" />
+        <img
+          src="images/image-3.jpg"
+          alt=""
+          class="service__image"
+          data-aos="fade-right"
+        />
         <div class="media">
           <div class="media__image">
             <svg class="icon">
@@ -453,7 +472,12 @@
         </div>
       </article>
       <article class="service">
-        <img src="images/image-4.jpg" alt="" class="service__image" />
+        <img
+          src="images/image-4.jpg"
+          alt=""
+          class="service__image"
+          data-aos="fade-right"
+        />
         <div class="media">
           <div class="media__image">
             <svg class="icon">
@@ -473,13 +497,18 @@
       </article>
     </section>
 
-    <section class="section about">
+    <section class="section about" data-aos="fade-up">
       <header class="header">
         <h3 class="about__title">about us</h3>
         <h2 class="about__tagline">learn more about us</h2>
       </header>
       <div class="service">
-        <img src="images/company.png" alt="" class="service__image" />
+        <img
+          src="images/company.png"
+          alt=""
+          class="service__image"
+          data-aos="fade-right"
+        />
         <div class="media">
           <div class="media__body">
             <p class="media__text">
@@ -503,7 +532,7 @@
       </div>
     </section>
 
-    <section class="section contact">
+    <section class="section contact" data-aos="fade-up">
       <header class="header">
         <h3 class="contact__title">Contact us</h3>
         <h2 class="contact__tagline">
@@ -511,7 +540,7 @@
         </h2>
       </header>
       <div class="grid--1x2">
-        <div class="media">
+        <div class="media" data-aos="fade-right">
           <svg class="icon">
             <use xlink:href="images/sprite.svg#phone--white"></use>
           </svg>
@@ -523,7 +552,7 @@
             <a href="#" class="link">+234 012 345 6789</a>
           </div>
         </div>
-        <div class="media">
+        <div class="media" data-aos="fade-right">
           <svg class="icon">
             <use xlink:href="images/sprite.svg#email--white"></use>
           </svg>
@@ -535,7 +564,7 @@
             <a href="#" class="link">company@email.com</a>
           </div>
         </div>
-        <div class="media">
+        <div class="media" data-aos="fade-right">
           <svg class="icon">
             <use xlink:href="images/sprite.svg#x(twitter)"></use>
           </svg>
@@ -546,7 +575,7 @@
             <a href="#" class="link">@companyname</a>
           </div>
         </div>
-        <div class="media">
+        <div class="media" data-aos="fade-right">
           <svg class="icon">
             <use xlink:href="images/sprite.svg#facebook"></use>
           </svg>
@@ -557,7 +586,7 @@
             <a href="#" class="link">Company Name</a>
           </div>
         </div>
-        <div class="media">
+        <div class="media" data-aos="fade-right">
           <svg class="icon">
             <use xlink:href="images/sprite.svg#instagram"></use>
           </svg>
@@ -619,7 +648,7 @@
         approach to problem-solving which also includes 24/7 online & offline
         services , in respond to our client's enquiries by phone or email.
       </p>
-      <span class="icon-capsule">
+      <span class="icon-capsule" data-aos="zoom-in" data-aos-duration="3000">
         <a href="#" class="link">
           <svg class="icon">
             <use xlink:href="images/sprite.svg#x(twitter)"></use>
@@ -665,6 +694,10 @@
     </footer>
 
     <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script>
       const navIcon = document.querySelector("#menu");
       const sidebar = document.querySelector(".sidebar");
