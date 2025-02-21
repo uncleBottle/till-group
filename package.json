@@ -1,0 +1,18 @@
+{
+  "name": "till-group",
+  "version": "1.0.0",
+  "main": "vite.config.js",
+  "description": "Till-Group by Akinola",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Akinola",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^4.5.9"
+  }
+}
